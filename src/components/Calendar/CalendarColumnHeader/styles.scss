@@ -1,0 +1,8 @@
+.calendar-column-header__item {
+  height: var(--cell-height-rem);
+  width: max-content;
+}
+
+.calendar-column-header__item--empty {
+  height: calc((var(--column-header-height) + var(--cell-height)) * var(--cell-unit) - 0.5rem);
+}

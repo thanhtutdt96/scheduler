@@ -1,0 +1,53 @@
+@import "variable";
+
+.btn {
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+$buttonBackgroundColorValues: (
+  "success": $primary, "info": $secondary, "warning": $warning, "danger": $negative,
+);
+
+$buttonTextColorValues: (
+  "success": green, "info": dodgerblue, "warning": orange, "danger": red,
+);
+
+@each $name, $value in $buttonBackgroundColorValues {
+  .#{$name} {
+    border-color: $value;
+
+    &:hover {
+      background-color: $value;
+    }
+
+    &:disabled {
+      background-color: $value;
+      color: #fff;
+      opacity: .65;
+    }
+  }
+}
+
+@each $name, $value in $buttonTextColorValues {
+  .#{$name} {
+    color: $value;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}

@@ -1,0 +1,10 @@
+.calendar-row-header {
+  height: var(--column-header-height-rem);
+  border: 1px solid var(--color-border);
+}
+
+.calendar-row-header--empty {
+  @extend .calendar-row-header;
+  height: var(--cell-height-rem);
+  background-color: #eee;
+}

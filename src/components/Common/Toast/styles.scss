@@ -1,0 +1,28 @@
+.toast {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  color: #fff;
+  z-index: 9999;
+
+  &.toast--success {
+    background-color: var(--color-primary);
+  }
+
+  &.toast--error {
+    background-color: var(--color-negative);
+  }
+
+  button {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    outline: 0;
+  }
+}

@@ -1,0 +1,33 @@
+$primary: #29c58c;
+$secondary: #389ced;
+$consecutive-secondary: #6cade3;
+
+$negative: #f45145;
+$consecutive-negative: #f18e6a;
+$warning: #f6a665;
+
+$border: #ccc;
+$other: #fff;
+
+$cellWidth: 12.5;
+$cellHeight: 1.75;
+$columnHeaderHeight: 3;
+$cellUnit: 1rem;
+
+:root {
+  --color-primary: #{$primary};
+  --color-secondary: #{$secondary};
+  --color-consecutive-secondary: #{$consecutive-secondary};
+  --color-negative: #{$negative};
+  --color-consecutive-negative: #{$consecutive-negative};
+  --color-warning: #{$warning};
+  --color-other: #{$other};
+  --color-border: #{$border};
+  --cell-width: #{$cellWidth};
+  --cell-height: #{$cellHeight};
+  --column-header-height: #{$columnHeaderHeight};
+  --cell-unit: #{$cellUnit};
+  --cell-width-rem: #{$cellWidth * $cellUnit};
+  --cell-height-rem: #{$cellHeight * $cellUnit};
+  --column-header-height-rem: #{$columnHeaderHeight * $cellUnit};
+}
